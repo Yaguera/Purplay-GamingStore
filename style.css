@@ -4,7 +4,9 @@ body {
 
 .navbar {
     background-image: linear-gradient(to left, #DD0FC4, 60%, #001858);
-    box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.5);
+    box-shadow: 4px -2px 38px -8px rgba(0,0,0,0.64);
+-webkit-box-shadow: 4px -2px 38px -8px rgba(0,0,0,0.64);
+-moz-box-shadow: 4px -2px 38px -8px rgba(0,0,0,0.64);
 }
 
 header h1 {
@@ -32,14 +34,6 @@ header h1 {
     background-color: #ffeae0;
 }
 
-@media screen and (max-width: 767px) {
-    header ul {
-        margin-top: 20px;
-    }
-    .tab-pane .col-md-3 {
-        margin-top: 50px;
-    }
-}
 
 
 
@@ -50,7 +44,7 @@ header h1 {
 
 
 #sobre {
-    background-image: linear-gradient(180deg, #DD0FC4, 30%, #001858);
+    background-image: linear-gradient(180deg, #DD0FC4, 25%, #001858);
     color: #fff;
 }
 
@@ -88,6 +82,12 @@ svg{
     width: 100%;
 }
 
+.linha{
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DD0FC4;
+}
 
 #produtos {
     background-image: linear-gradient(180deg,#001858 , 50%, #DD0FC4);
@@ -119,11 +119,23 @@ svg{
 
 .tab-content{
     background-color: rgba(0,0,0,0.5);
-    padding: 50px 0px;
+    padding: 50px 30px;
     box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.5);
     border-radius: 3%;
 }
 
 .section-title{
     font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    header ul {
+        margin-top: 20px;
+    }
+    .tab-pane .col-md-3 {
+        margin-top: 50px;
+    }
+    .tab-content {
+        padding: 0 20px;
+    }
 }
