@@ -139,18 +139,7 @@ svg {
     font-weight: bold;
 }
 
-@media screen and (max-width: 767px) {
-    header ul {
-        margin-top: 20px;
-    }
 
-    .tab-pane .col-md-3 {
-        margin-top: 50px;
-    }
-    #sobre{
-        height: 70vh;
-    }
-}
 
 
 #testimonials{
@@ -244,4 +233,24 @@ footer{
     box-shadow: 4px -2px 38px -8px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 4px -2px 38px -8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 4px -2px 38px -8px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 767px) {
+    header ul {
+        margin-top: 20px;
+    }
+
+    .tab-pane .col-md-3 {
+        margin-top: 50px;
+    }
+    #sobre{
+        height: 90vh;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px){
+    #produtos .col-md-3 {
+        width: 50%;
+        margin-bottom: 40px;
+}
 }
