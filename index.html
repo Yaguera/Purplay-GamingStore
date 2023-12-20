@@ -10,6 +10,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,18 +31,18 @@
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link" href="#produtos">
-                            <i class="bi bi-calendar-check me-1"></i>
+                            <i class="bi bi-pc-display me-1"></i>
                             Store
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link" href="#testimonials">
-                            <i class="bi bi-card-text me-1"></i>
+                            <i class="bi bi-people me-1"></i>
                             Our Clients
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#fale-conosco">
+                        <a class="nav-link" href="#talk-to-us">
                             <i class="bi bi-chat-left-text me-1"></i>
                             Talk to Us
                         </a>
@@ -93,12 +94,12 @@
         </section>
         <section id="produtos">
             <div class="container">
-                <div class="linha">
-                    <h2 class="section-title text-center text-colored">Store</h2>
+                <div class="d-flex justify-content-center">
+                    <h2 class="section-title text-center text-colored linha">Store</h2>
                 </div>
                 <div class="row mt-5">
                     <aside class="col-md-2">
-                        <nav class="nav nav-pills flex-column nav-cardapio">
+                        <nav class="nav nav-pills flex-column nav-menu">
                             <button data-bs-toggle="tab" data-bs-target="#monitors" type="button"
                                 class="nav-link text-colored fw-bold text-start active">Monitors</button>
                             <button data-bs-toggle="tab" data-bs-target="#processors" type="button"
@@ -318,7 +319,67 @@
             </div>
             <img src="images/wave.png" class="bottom-img mt-5">
         </section>
-        <section id="talk-to-us"></section>
+        <section id="talk-to-us" class="py-5">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <h2 class="section-title text-center linha">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Seu mensagem</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                            </div>
+                            <button type="buton" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 ps-md-5 d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored" >
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="ms-1 me-1">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="text-colored bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p class="text-colored">Rua tal nº 420, bairro leroliro - Fortaleza, Ce </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
