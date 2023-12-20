@@ -46,6 +46,7 @@ header h1 {
 #sobre {
     background-image: linear-gradient(180deg, #DD0FC4, 25%, #001858);
     color: #fff;
+    height: 60vh;
 }
 
 .promo-title {
@@ -83,6 +84,7 @@ svg {
 }
 
 .linha {
+    width: 100%;
     text-align: center;
     display: inline-block;
     padding-bottom: 16px;
@@ -137,16 +139,17 @@ svg {
     .tab-pane .col-md-3 {
         margin-top: 50px;
     }
+    #sobre{
+        height: 70vh;
+    }
 }
 
 
 
-#testimonials {
-    margin: 100px 0;
-}
 
 .testimonials {
-    border-left: 4px solid #7b1798;
+    border-left: 4px solid;
+    border-image: linear-gradient(45deg, #DD0FC4, #001858) 1;
     margin: 50px 0;
 }
 
@@ -169,4 +172,11 @@ svg {
     font-weight: bold;
     font-size: 16px;
     color: #7c7b7b;
+}
+
+/*  TALK TO US */
+
+#talk-to-us{
+    background-image: linear-gradient(180deg, #DD0FC4, 25%, #001858);
+    height: 100vh;
 }
