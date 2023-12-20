@@ -207,6 +207,7 @@ svg {
 
 #talk-to-us{
     background-image: linear-gradient(180deg, #DD0FC4, 45%, #001858);
+    padding-bottom: 50px;
 }
 
 #talk-to-us .container{
@@ -234,4 +235,14 @@ textarea{
 .error{
     color: red;
     font-weight: bold;
+}
+
+/* footer */
+
+footer{
+    background-image: linear-gradient(to left, #001858, 60%, #DD0FC4);
+    color: #fff;
+    box-shadow: 4px -2px 38px -8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 4px -2px 38px -8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 4px -2px 38px -8px rgba(0, 0, 0, 0.3);
 }
